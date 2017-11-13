@@ -12,7 +12,7 @@ import { AngularfireService } from '../services/angularfire.service';
 })
 export class TestComponent implements OnInit {
   items:Observable<any[]>;
-  constructor(public afs:AngularfireService) {
+  constructor(private afs:AngularfireService) {
     this.items = afs.getContentList();
 
   }

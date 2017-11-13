@@ -1,5 +1,6 @@
-<p *ngFor = 'let item of items | async'>
-  {{item.content.content}}
-</p>
-
-<!-- <p>{{items[1].content.content}}</p> -->
+<ul>
+  <li *ngFor = 'let item of items | async' style="list-style:none">
+    <img src="{{item.content.contentImageUrl}}" alt="" style="width:100px; height:100px">
+    <p>{{item.content.content}}</p>
+  </li>
+</ul>
